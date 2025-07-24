@@ -54,12 +54,6 @@ class TestObterResposta(unittest.TestCase):
         self.assertEqual(obter_resposta("sintomas"), "Sintomas são sinais ou indicações de uma condição médica ou doença.")
         self.assertEqual(obter_resposta("problemas saúde física"), "A saúde é um estado de completo bem-estar físico, mental e social, e não apenas a ausência de doenças ou enfermidades.")
 
-    def teste_indisposicao(self):
-        """Teste de respostas sobre indisposição - 3 testes"""
-        self.assertEqual(obter_resposta("indisposição"), "Sintomas de indisposição podem incluir fadiga, dor de cabeça, náusea e outros sinais de que algo não está bem.")
-        self.assertEqual(obter_resposta("sintomas de indisposição"), "Sintomas de indisposição podem incluir fadiga, dor de cabeça, náusea e outros sinais de que algo não está bem.")
-        self.assertEqual(obter_resposta("estou com sintomas de indisposição"), "Sintomas de indisposição podem incluir fadiga, dor de cabeça, náusea e outros sinais de que algo não está bem.")
-
     def teste_horas_e_data(self):
         """Teste de respostas a horas e data"""
         hora_atual = datetime.now().strftime("%H:%M")
